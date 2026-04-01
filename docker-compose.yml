@@ -1,0 +1,5 @@
+services:
+  app:
+    build: .
+    container_name: bokuno_java_hirabun_app
+    tty: true
