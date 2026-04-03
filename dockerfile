@@ -2,8 +2,6 @@ FROM eclipse-temurin:17
 
 WORKDIR /app
 
-COPY Main.java .
+COPY . .
 
-RUN javac Main.java
-
-CMD ["sh", "-c", "java Main && tail -f /dev/null"]
+CMD ["tail", "-f", "/dev/null"]
